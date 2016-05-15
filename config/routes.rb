@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   end
   
   root to: 'main#index'
+  match '*path', to: 'main#index', via: [:get, :post]
 
 end
